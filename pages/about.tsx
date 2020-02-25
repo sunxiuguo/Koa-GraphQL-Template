@@ -1,12 +1,35 @@
 import React from 'react';
-import Link from 'next/link';
+import Container from '@material-ui/core/Container';
+import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
+import MuiLink from '@material-ui/core/Link';
+import ProTip from '../src/ProTip';
+import Link from '../src/Link';
 
-export default () => (
-    <div>
-        This is a static page goto{' '}
-        <Link href="/">
-            <a>dynamic</a>
-        </Link>{' '}
-        page.
-    </div>
-);
+function Copyright() {
+    return (
+        <Typography variant="body2" color="textSecondary" align="center">
+            {'Copyright © '}
+            <MuiLink color="inherit" href="https://material-ui.com/">
+                Your Website
+            </MuiLink>{' '}
+            {new Date().getFullYear()}
+            {'.'}
+        </Typography>
+    );
+}
+
+export default function About() {
+    return (
+        <Container maxWidth="sm">
+            <Box my={4}>
+                <Typography variant="h4" component="h1" gutterBottom>
+                    Next.js with TypeScript example
+                </Typography>
+                <Link href="/">Go to the main page</Link>
+                <ProTip />
+                <Copyright />
+            </Box>
+        </Container>
+    );
+}

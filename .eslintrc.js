@@ -28,8 +28,10 @@ module.exports = {
         "@typescript-eslint/explicit-function-return-type": "off",
         "react/no-unescaped-entities": ["error", {"forbid": [">", "}"]}],
         "react/display-name": [0, { "ignoreTranspilerName": true }],
+        "react/prop-types": 0,
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-use-before-define": "off",
-        "@typescript-eslint/no-var-requires": "off"
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/no-non-null-assertion": "off"
     }
 }

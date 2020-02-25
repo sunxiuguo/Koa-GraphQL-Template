@@ -1,7 +1,26 @@
 import React from 'react';
 import withApollo from '../lib/with-apollo';
-import Link from 'next/link';
 import { useViewerQuery } from '../lib/viewer.graphql';
+
+import Container from '@material-ui/core/Container';
+import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
+import MuiLink from '@material-ui/core/Link';
+import ProTip from '../src/ProTip';
+import Link from '../src/Link';
+
+function Copyright() {
+    return (
+        <Typography variant="body2" color="textSecondary" align="center">
+            {'Copyright © '}
+            <MuiLink color="inherit" href="https://material-ui.com/">
+                Your Website
+            </MuiLink>{' '}
+            {new Date().getFullYear()}
+            {'.'}
+        </Typography>
+    );
+}
 
 const Index = () => {
     const { data } = useViewerQuery();
@@ -9,13 +28,18 @@ const Index = () => {
     if (data) {
         const { viewer } = data;
         return (
-            <div>
-                You're signed in as {viewer.name} and you're {viewer.status} goto{' '}
-                <Link href="/about">
-                    <a>static</a>
-                </Link>{' '}
-                page.
-            </div>
+            <Container maxWidth="sm">
+                <Box my={4}>
+                    <Typography variant="h4" component="h1" gutterBottom>
+                        name:{viewer.name}
+                    </Typography>
+                    <Link href="/about" color="secondary">
+                        Go to the about page
+                    </Link>
+                    <ProTip />
+                    <Copyright />
+                </Box>
+            </Container>
         );
     }
 

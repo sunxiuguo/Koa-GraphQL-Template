@@ -4,6 +4,12 @@ import KoaStatic from 'koa-static';
 import Router from 'koa-router';
 import bodyParser from 'koa-bodyparser';
 
+import { connectDB } from './mongodb/index';
+import { saveInfo, fetchInfo } from './controllers/info';
+import { saveStudent, fetchStudent, fetchStudentDetail } from './controllers/student';
+
+connectDB();
+
 const app = new Koa();
 const router = new Router();
 
@@ -15,6 +21,15 @@ app.use(KoaStatic(__dirname + '/public'));
 router.get('/test', ctx => {
     ctx.body = 'test page';
 });
+
+// info router
+router.post('/saveinfo', saveInfo);
+router.get('/info', fetchInfo);
+
+// student router
+router.post('/savestudent', saveStudent);
+router.get('/student', fetchStudent);
+router.get('/studentDetail', fetchStudentDetail);
 
 app.use(router.routes()).use(router.allowedMethods());
 

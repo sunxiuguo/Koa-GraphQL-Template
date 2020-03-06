@@ -3,7 +3,8 @@ import mongoose from 'mongoose';
 import config from '../config';
 
 // 链接mongodb
-export const database = () => {
+export const connectDB = () => {
+    console.log('ready to connect database');
     mongoose.set('debug', true);
 
     mongoose.connect(config.dbPath);

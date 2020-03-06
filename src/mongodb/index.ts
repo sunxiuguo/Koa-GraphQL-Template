@@ -4,10 +4,12 @@ import config from '../config';
 
 // 链接mongodb
 export const connectDB = () => {
-    console.log('ready to connect database');
     mongoose.set('debug', true);
 
-    mongoose.connect(config.dbPath);
+    mongoose.connect(config.dbPath, {
+        useUnifiedTopology: true,
+        useNewUrlParser: true
+    });
 
     mongoose.connection.on('disconnected', () => {
         mongoose.connect(config.dbPath);

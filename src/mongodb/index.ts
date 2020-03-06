@@ -1,8 +1,6 @@
 // 引入mongoose模块
 import mongoose from 'mongoose';
 import config from '../config';
-// import { StudentModel } from './scheme/student';
-// import { InfoModal } from './scheme/info';
 
 // 链接mongodb
 export const database = () => {

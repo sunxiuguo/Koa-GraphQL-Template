@@ -8,7 +8,7 @@
         "dev": "yarn codegen && next",
         "build": "yarn codegen && next build",
         "start": "yarn build && next start",
-        "serve": "nodemon --watch src/**/* -e ts,tsx --exec ts-node src/start.ts",
+        "serve": "nodemon --watch src -e ts,tsx --exec ts-node src/start.ts",
         "lint": "eslint lib pages src --fix --ext .ts,.tsx ",
         "mongo": "brew services start mongodb-community@4.2"
     },

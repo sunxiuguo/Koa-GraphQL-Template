@@ -1,8 +1,17 @@
-import { prop, getModelForClass, Ref } from '@typegoose/typegoose';
+import { prop, getModelForClass, Ref, pre } from '@typegoose/typegoose';
 import { Info } from './info';
 import { Meta } from './meta';
-import { updateTime } from '../utils/preSave';
 
+@pre<Student>('save', function() {
+    // 直接this.meta.xxx赋值会不生效
+    this.meta = this.meta || {};
+    if (this.isNew) {
+        this.meta.createdAt = Date.now();
+        this.meta.updatedAt = Date.now();
+    } else {
+        this.meta.updatedAt = Date.now();
+    }
+})
 export class Student {
     @prop()
     public name!: string;
@@ -16,10 +25,8 @@ export class Student {
     @prop({ ref: Info })
     public info!: Ref<Info>;
 
-    @prop({ ref: Meta })
-    public meta!: Ref<Meta>;
+    @prop({ _id: false })
+    public meta!: Meta;
 }
 
 export const StudentModel = getModelForClass(Student);
-
-StudentModel.schema.pre('save', updateTime);

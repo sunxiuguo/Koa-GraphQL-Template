@@ -1462,6 +1462,13 @@
     tslib "1.10.0"
     valid-url "1.0.9"
 
+"@koa/cors@^2.2.1":
+  version "2.2.3"
+  resolved "https://registry.npm.taobao.org/@koa/cors/download/@koa/cors-2.2.3.tgz#c32a9907acbee1e72fedfb0b9ac840d2e6f9be57"
+  integrity sha1-wyqZB6y+4ecv7fsLmshA0ub5vlc=
+  dependencies:
+    vary "^1.1.2"
+
 "@material-ui/core@^4.9.4":
   version "4.9.4"
   resolved "https://registry.npm.taobao.org/@material-ui/core/download/@material-ui/core-4.9.4.tgz#796515b12845dc6ea7e21872888cfc4c0c1c1efe"
@@ -1635,7 +1642,7 @@
     semver "^7.1.3"
     tslib "^1.11.0"
 
-"@types/accepts@*":
+"@types/accepts@*", "@types/accepts@^1.3.5":
   version "1.3.5"
   resolved "https://registry.npm.taobao.org/@types/accepts/download/@types/accepts-1.3.5.tgz?cache=0&sync_timestamp=1580841236593&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Faccepts%2Fdownload%2F%40types%2Faccepts-1.3.5.tgz#c34bec115cfc746e04fe5a059df4ce7e7b391575"
   integrity sha1-w0vsEVz8dG4E/loFnfTOfns5FXU=
@@ -1678,6 +1685,13 @@
     "@types/express" "*"
     "@types/keygrip" "*"
     "@types/node" "*"
+
+"@types/cors@^2.8.4":
+  version "2.8.6"
+  resolved "https://registry.npm.taobao.org/@types/cors/download/@types/cors-2.8.6.tgz#cfaab33c49c15b1ded32f235111ce9123009bd02"
+  integrity sha1-z6qzPEnBWx3tMvI1ERzpEjAJvQI=
+  dependencies:
+    "@types/express" "*"
 
 "@types/debounce@1.2.0":
   version "1.2.0"
@@ -1757,14 +1771,14 @@
   resolved "https://registry.npm.taobao.org/@types/keygrip/download/@types/keygrip-1.0.2.tgz#513abfd256d7ad0bf1ee1873606317b33b1b2a72"
   integrity sha1-UTq/0lbXrQvx7hhzYGMXszsbKnI=
 
-"@types/koa-bodyparser@^4.3.0":
+"@types/koa-bodyparser@^4.2.1", "@types/koa-bodyparser@^4.3.0":
   version "4.3.0"
   resolved "https://registry.npm.taobao.org/@types/koa-bodyparser/download/@types/koa-bodyparser-4.3.0.tgz#54ecd662c45f3a4fa9de849528de5fc8ab269ba5"
   integrity sha1-VOzWYsRfOk+p3oSVKN5fyKsmm6U=
   dependencies:
     "@types/koa" "*"
 
-"@types/koa-compose@*":
+"@types/koa-compose@*", "@types/koa-compose@^3.2.2":
   version "3.2.5"
   resolved "https://registry.npm.taobao.org/@types/koa-compose/download/@types/koa-compose-3.2.5.tgz#85eb2e80ac50be95f37ccf8c407c09bbe3468e9d"
   integrity sha1-hesugKxQvpXzfM+MQHwJu+NGjp0=
@@ -1793,7 +1807,7 @@
     "@types/koa" "*"
     "@types/koa-send" "*"
 
-"@types/koa@*", "@types/koa@^2.11.2":
+"@types/koa@*", "@types/koa@^2.0.46", "@types/koa@^2.11.2":
   version "2.11.2"
   resolved "https://registry.npm.taobao.org/@types/koa/download/@types/koa-2.11.2.tgz#0595656a59ff13ca97edf6dde7da1e5319651f9b"
   integrity sha1-BZVlaln/E8qX7fbd59oeUxllH5s=
@@ -1804,6 +1818,13 @@
     "@types/keygrip" "*"
     "@types/koa-compose" "*"
     "@types/node" "*"
+
+"@types/koa__cors@^2.2.1":
+  version "2.2.3"
+  resolved "https://registry.npm.taobao.org/@types/koa__cors/download/@types/koa__cors-2.2.3.tgz#227154b4c70439083b33c89627eb780a517cd05b"
+  integrity sha1-InFUtMcEOQg7M8iWJ+t4ClF80Fs=
+  dependencies:
+    "@types/koa" "*"
 
 "@types/long@^4.0.0":
   version "4.0.1"
@@ -2347,6 +2368,14 @@ apollo-cache-control@^0.8.11:
     apollo-server-env "^2.4.3"
     graphql-extensions "^0.10.10"
 
+apollo-cache-control@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.npm.taobao.org/apollo-cache-control/download/apollo-cache-control-0.9.0.tgz#43d2eec16d40248683f46b9b28937a89ad3b5c54"
+  integrity sha1-Q9LuwW1AJIaD9GubKJN6ia07XFQ=
+  dependencies:
+    apollo-server-env "^2.4.3"
+    graphql-extensions "^0.11.0"
+
 apollo-cache-inmemory@1.6.5:
   version "1.6.5"
   resolved "https://registry.npm.taobao.org/apollo-cache-inmemory/download/apollo-cache-inmemory-1.6.5.tgz#2ccaa3827686f6ed7fb634203dbf2b8d7015856a"
@@ -2416,6 +2445,20 @@ apollo-engine-reporting@^1.6.0:
     apollo-server-types "^0.2.10"
     async-retry "^1.2.1"
     graphql-extensions "^0.10.10"
+
+apollo-engine-reporting@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.npm.taobao.org/apollo-engine-reporting/download/apollo-engine-reporting-1.7.0.tgz#34a54ef96da5cfe1dea3a4fdf02768d1cc7e154f"
+  integrity sha1-NKVO+W2lz+Heo6T98Cdo0cx+FU8=
+  dependencies:
+    apollo-engine-reporting-protobuf "^0.4.4"
+    apollo-graphql "^0.4.0"
+    apollo-server-caching "^0.5.1"
+    apollo-server-env "^2.4.3"
+    apollo-server-errors "^2.4.0"
+    apollo-server-types "^0.3.0"
+    async-retry "^1.2.1"
+    graphql-extensions "^0.11.0"
 
 apollo-env@^0.6.1:
   version "0.6.1"
@@ -2534,6 +2577,33 @@ apollo-server-caching@^0.5.1:
   dependencies:
     lru-cache "^5.0.0"
 
+apollo-server-core@^2.11.0:
+  version "2.11.0"
+  resolved "https://registry.npm.taobao.org/apollo-server-core/download/apollo-server-core-2.11.0.tgz#91a055ce6cf12a8b43e8a4811d465d97fa324eac"
+  integrity sha1-kaBVzmzxKotD6KSBHUZdl/oyTqw=
+  dependencies:
+    "@apollographql/apollo-tools" "^0.4.3"
+    "@apollographql/graphql-playground-html" "1.6.24"
+    "@types/graphql-upload" "^8.0.0"
+    "@types/ws" "^6.0.0"
+    apollo-cache-control "^0.9.0"
+    apollo-datasource "^0.7.0"
+    apollo-engine-reporting "^1.7.0"
+    apollo-server-caching "^0.5.1"
+    apollo-server-env "^2.4.3"
+    apollo-server-errors "^2.4.0"
+    apollo-server-plugin-base "^0.7.0"
+    apollo-server-types "^0.3.0"
+    apollo-tracing "^0.9.0"
+    fast-json-stable-stringify "^2.0.0"
+    graphql-extensions "^0.11.0"
+    graphql-tag "^2.9.2"
+    graphql-tools "^4.0.0"
+    graphql-upload "^8.0.2"
+    sha.js "^2.4.11"
+    subscriptions-transport-ws "^0.9.11"
+    ws "^6.0.0"
+
 apollo-server-core@^2.9.14:
   version "2.10.1"
   resolved "https://registry.npm.taobao.org/apollo-server-core/download/apollo-server-core-2.10.1.tgz#5fa4ce7992d0bf1cce616dedf1a22a41c7589c7c"
@@ -2574,6 +2644,35 @@ apollo-server-errors@^2.0.2, apollo-server-errors@^2.3.4:
   resolved "https://registry.npm.taobao.org/apollo-server-errors/download/apollo-server-errors-2.3.4.tgz#b70ef01322f616cbcd876f3e0168a1a86b82db34"
   integrity sha1-tw7wEyL2FsvNh28+AWihqGuC2zQ=
 
+apollo-server-errors@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.npm.taobao.org/apollo-server-errors/download/apollo-server-errors-2.4.0.tgz#3096db02b6ae8d434a6b2678f74eddaad8b98452"
+  integrity sha1-MJbbAraujUNKayZ4907dqti5hFI=
+
+apollo-server-koa@^2.11.0:
+  version "2.11.0"
+  resolved "https://registry.npm.taobao.org/apollo-server-koa/download/apollo-server-koa-2.11.0.tgz#6b87d0e19130633a6371f00df0ab8868421cf832"
+  integrity sha1-a4fQ4ZEwYzpjcfAN8KuIaEIc+DI=
+  dependencies:
+    "@apollographql/graphql-playground-html" "1.6.24"
+    "@koa/cors" "^2.2.1"
+    "@types/accepts" "^1.3.5"
+    "@types/cors" "^2.8.4"
+    "@types/koa" "^2.0.46"
+    "@types/koa-bodyparser" "^4.2.1"
+    "@types/koa-compose" "^3.2.2"
+    "@types/koa__cors" "^2.2.1"
+    accepts "^1.3.5"
+    apollo-server-core "^2.11.0"
+    apollo-server-types "^0.3.0"
+    graphql-subscriptions "^1.0.0"
+    graphql-tools "^4.0.0"
+    koa "2.11.0"
+    koa-bodyparser "^4.2.1"
+    koa-compose "^4.1.0"
+    koa-router "^7.4.0"
+    type-is "^1.6.16"
+
 apollo-server-micro@2.9.14:
   version "2.9.14"
   resolved "https://registry.npm.taobao.org/apollo-server-micro/download/apollo-server-micro-2.9.14.tgz#a5dc3aec570ab60337b792e71e589e0a6acfc959"
@@ -2592,10 +2691,26 @@ apollo-server-plugin-base@^0.6.10:
   dependencies:
     apollo-server-types "^0.2.10"
 
+apollo-server-plugin-base@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.npm.taobao.org/apollo-server-plugin-base/download/apollo-server-plugin-base-0.7.0.tgz#5c52ee311c8ef884b8b17be1b7e9d4597966dae1"
+  integrity sha1-XFLuMRyO+IS4sXvht+nUWXlm2uE=
+  dependencies:
+    apollo-server-types "^0.3.0"
+
 apollo-server-types@^0.2.10, apollo-server-types@^0.2.9:
   version "0.2.10"
   resolved "https://registry.npm.taobao.org/apollo-server-types/download/apollo-server-types-0.2.10.tgz#017ee0c812e70b0846826834eb2c9eda036c1c7a"
   integrity sha1-AX7gyBLnCwhGgmg06yye2gNsHHo=
+  dependencies:
+    apollo-engine-reporting-protobuf "^0.4.4"
+    apollo-server-caching "^0.5.1"
+    apollo-server-env "^2.4.3"
+
+apollo-server-types@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.npm.taobao.org/apollo-server-types/download/apollo-server-types-0.3.0.tgz#01732e5fc6c4a2a522f051d5685c57a8e3dc620e"
+  integrity sha1-AXMuX8bEoqUi8FHVaFxXqOPcYg4=
   dependencies:
     apollo-engine-reporting-protobuf "^0.4.4"
     apollo-server-caching "^0.5.1"
@@ -2608,6 +2723,14 @@ apollo-tracing@^0.8.11:
   dependencies:
     apollo-server-env "^2.4.3"
     graphql-extensions "^0.10.10"
+
+apollo-tracing@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.npm.taobao.org/apollo-tracing/download/apollo-tracing-0.9.0.tgz#673916ae674b9a8d72603f73af0b8561dfd38306"
+  integrity sha1-ZzkWrmdLmo1yYD9zrwuFYd/TgwY=
+  dependencies:
+    apollo-server-env "^2.4.3"
+    graphql-extensions "^0.11.0"
 
 apollo-utilities@1.3.3, apollo-utilities@^1.0.1, apollo-utilities@^1.3.0, apollo-utilities@^1.3.3:
   version "1.3.3"
@@ -5556,6 +5679,15 @@ graphql-extensions@^0.10.10:
     apollo-server-env "^2.4.3"
     apollo-server-types "^0.2.10"
 
+graphql-extensions@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.npm.taobao.org/graphql-extensions/download/graphql-extensions-0.11.0.tgz#2923b06f7452dad186d835327974b6c3ebb9c58f"
+  integrity sha1-KSOwb3RS2tGG2DUyeXS2w+u5xY8=
+  dependencies:
+    "@apollographql/apollo-tools" "^0.4.3"
+    apollo-server-env "^2.4.3"
+    apollo-server-types "^0.3.0"
+
 graphql-import@0.7.1:
   version "0.7.1"
   resolved "https://registry.npm.taobao.org/graphql-import/download/graphql-import-0.7.1.tgz#4add8d91a5f752d764b0a4a7a461fcd93136f223"
@@ -5588,6 +5720,13 @@ graphql-request@^1.5.0:
   integrity sha1-OY0QrhXFhWdnQb3j/AHVypSPj74=
   dependencies:
     cross-fetch "2.2.2"
+
+graphql-subscriptions@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.npm.taobao.org/graphql-subscriptions/download/graphql-subscriptions-1.1.0.tgz#5f2fa4233eda44cf7570526adfcf3c16937aef11"
+  integrity sha1-Xy+kIz7aRM91cFJq3888FpN67xE=
+  dependencies:
+    iterall "^1.2.1"
 
 graphql-tag-pluck@0.8.7:
   version "0.8.7"
@@ -5828,7 +5967,7 @@ http-errors@1.7.2:
     statuses ">= 1.5.0 < 2"
     toidentifier "1.0.0"
 
-http-errors@1.7.3, http-errors@^1.6.3, http-errors@^1.7.3, http-errors@~1.7.2:
+http-errors@1.7.3, http-errors@^1.3.1, http-errors@^1.6.3, http-errors@^1.7.3, http-errors@~1.7.2:
   version "1.7.3"
   resolved "https://registry.npm.taobao.org/http-errors/download/http-errors-1.7.3.tgz#6c619e4f9c60308c38519498c14fbb10aacebb06"
   integrity sha1-bGGeT5xgMIw4UZSYwU+7EKrOuwY=
@@ -6740,6 +6879,18 @@ koa-convert@^1.2.0:
     co "^4.6.0"
     koa-compose "^3.0.0"
 
+koa-router@^7.4.0:
+  version "7.4.0"
+  resolved "https://registry.npm.taobao.org/koa-router/download/koa-router-7.4.0.tgz#aee1f7adc02d5cb31d7d67465c9eacc825e8c5e0"
+  integrity sha1-ruH3rcAtXLMdfWdGXJ6syCXoxeA=
+  dependencies:
+    debug "^3.1.0"
+    http-errors "^1.3.1"
+    koa-compose "^3.0.0"
+    methods "^1.0.1"
+    path-to-regexp "^1.1.1"
+    urijs "^1.19.0"
+
 koa-router@^8.0.8:
   version "8.0.8"
   resolved "https://registry.npm.taobao.org/koa-router/download/koa-router-8.0.8.tgz#f0b70f90dae275db8c71a41e1efb625581fb3b5a"
@@ -6770,7 +6921,7 @@ koa-static@^5.0.0:
     debug "^3.1.0"
     koa-send "^5.0.0"
 
-koa@^2.11.0:
+koa@2.11.0, koa@^2.11.0:
   version "2.11.0"
   resolved "https://registry.npm.taobao.org/koa/download/koa-2.11.0.tgz?cache=0&sync_timestamp=1572232118391&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fkoa%2Fdownload%2Fkoa-2.11.0.tgz#fe5a51c46f566d27632dd5dc8fd5d7dd44f935a4"
   integrity sha1-/lpRxG9WbSdjLdXcj9XX3UT5NaQ=
@@ -7190,7 +7341,7 @@ merge2@^1.2.3, merge2@^1.3.0:
   resolved "https://registry.npm.taobao.org/merge2/download/merge2-1.3.0.tgz#5b366ee83b2f1582c48f87e47cf1a9352103ca81"
   integrity sha1-WzZu6DsvFYLEj4fkfPGpNSEDyoE=
 
-methods@^1.1.2:
+methods@^1.0.1, methods@^1.1.2:
   version "1.1.2"
   resolved "https://registry.npm.taobao.org/methods/download/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
@@ -8120,7 +8271,7 @@ path-parse@^1.0.6:
   resolved "https://registry.npm.taobao.org/path-parse/download/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
   integrity sha1-1i27VnlAXXLEc37FhgDp3c8G0kw=
 
-path-to-regexp@1.x:
+path-to-regexp@1.x, path-to-regexp@^1.1.1:
   version "1.8.0"
   resolved "https://registry.npm.taobao.org/path-to-regexp/download/path-to-regexp-1.8.0.tgz#887b3ba9d84393e87a0a0b9f4cb756198b53548a"
   integrity sha1-iHs7qdhDk+h6CgufTLdWGYtTVIo=
@@ -10489,7 +10640,7 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
-urijs@^1.19.2:
+urijs@^1.19.0, urijs@^1.19.2:
   version "1.19.2"
   resolved "https://registry.npm.taobao.org/urijs/download/urijs-1.19.2.tgz?cache=0&sync_timestamp=1571583876016&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Furijs%2Fdownload%2Furijs-1.19.2.tgz#f9be09f00c4c5134b7cb3cf475c1dd394526265a"
   integrity sha1-+b4J8AxMUTS3yzz0dcHdOUUmJlo=

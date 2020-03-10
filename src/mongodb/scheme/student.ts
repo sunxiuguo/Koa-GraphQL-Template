@@ -6,8 +6,7 @@ import { Meta } from './meta';
     // 直接this.meta.xxx赋值会不生效
     this.meta = this.meta || {};
     if (this.isNew) {
-        this.meta.createdAt = Date.now();
-        this.meta.updatedAt = Date.now();
+        this.meta.createdAt = this.meta.updatedAt = Date.now();
     } else {
         this.meta.updatedAt = Date.now();
     }

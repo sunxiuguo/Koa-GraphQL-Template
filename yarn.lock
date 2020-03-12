@@ -1751,6 +1751,13 @@
     "@types/koa" "*"
     graphql "^14.5.3"
 
+"@types/graphql@^14.5.0":
+  version "14.5.0"
+  resolved "https://registry.npm.taobao.org/@types/graphql/download/@types/graphql-14.5.0.tgz#a545fb3bc8013a3547cf2f07f5e13a33642b75d6"
+  integrity sha1-pUX7O8gBOjVHzy8H9eE6M2QrddY=
+  dependencies:
+    graphql "*"
+
 "@types/http-assert@*":
   version "1.5.1"
   resolved "https://registry.npm.taobao.org/@types/http-assert/download/@types/http-assert-1.5.1.tgz#d775e93630c2469c2f980fc27e3143240335db3b"
@@ -1888,6 +1895,11 @@
   resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-10.17.16.tgz#ee96ddac1a38d98d2c8a71c7df0cdad5758e8993"
   integrity sha1-7pbdrBo42Y0sinHH3wza1XWOiZM=
 
+"@types/node@^12.6.2":
+  version "12.12.29"
+  resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-12.12.29.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-12.12.29.tgz#46275f028b4e463b9ac5fefc1d08bc66cc193f25"
+  integrity sha1-RidfAotORjuaxf78HQi8ZswZPyU=
+
 "@types/parse-json@^4.0.0":
   version "4.0.0"
   resolved "https://registry.npm.taobao.org/@types/parse-json/download/@types/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
@@ -1925,6 +1937,11 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
+"@types/semver@^6.0.1":
+  version "6.2.1"
+  resolved "https://registry.npm.taobao.org/@types/semver/download/@types/semver-6.2.1.tgz?cache=0&sync_timestamp=1580844204639&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fsemver%2Fdownload%2F%40types%2Fsemver-6.2.1.tgz#a236185670a7860f1597cf73bea2e16d001461ba"
+  integrity sha1-ojYYVnCnhg8Vl89zvqLhbQAUYbo=
+
 "@types/serve-static@*":
   version "1.13.3"
   resolved "https://registry.npm.taobao.org/@types/serve-static/download/@types/serve-static-1.13.3.tgz?cache=0&sync_timestamp=1580844059264&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fserve-static%2Fdownload%2F%40types%2Fserve-static-1.13.3.tgz#eb7e1c41c4468272557e897e9171ded5e2ded9d1"
@@ -1937,6 +1954,11 @@
   version "1.0.2"
   resolved "https://registry.npm.taobao.org/@types/valid-url/download/@types/valid-url-1.0.2.tgz?cache=0&sync_timestamp=1581244176022&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fvalid-url%2Fdownload%2F%40types%2Fvalid-url-1.0.2.tgz#60fa435ce24bfd5ba107b8d2a80796aeaf3a8f45"
   integrity sha1-YPpDXOJL/VuhB7jSqAeWrq86j0U=
+
+"@types/validator@10.11.3":
+  version "10.11.3"
+  resolved "https://registry.npm.taobao.org/@types/validator/download/@types/validator-10.11.3.tgz#945799bef24a953c5bc02011ca8ad79331a3ef25"
+  integrity sha1-lFeZvvJKlTxbwCARyorXkzGj7yU=
 
 "@types/ws@^6.0.0":
   version "6.0.4"
@@ -3809,6 +3831,15 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+class-validator@>=0.9.1:
+  version "0.11.0"
+  resolved "https://registry.npm.taobao.org/class-validator/download/class-validator-0.11.0.tgz#5fca8b8a957c738a6749391e03ee81fad375dc4a"
+  integrity sha1-X8qLipV8c4pnSTkeA+6B+tN13Eo=
+  dependencies:
+    "@types/validator" "10.11.3"
+    google-libphonenumber "^3.1.6"
+    validator "12.0.0"
+
 clean-stack@^2.0.0:
   version "2.2.0"
   resolved "https://registry.npm.taobao.org/clean-stack/download/clean-stack-2.2.0.tgz#ee8472dbb129e727b31e8a10a427dee9dfe4008b"
@@ -5628,6 +5659,11 @@ globby@^6.1.0:
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
 
+google-libphonenumber@^3.1.6:
+  version "3.2.7"
+  resolved "https://registry.npm.taobao.org/google-libphonenumber/download/google-libphonenumber-3.2.7.tgz#1a8d790206631cd9a56a0f79dc4aa086e17b6f5b"
+  integrity sha1-Go15AgZjHNmlag953EqghuF7b1s=
+
 got@^6.7.1:
   version "6.7.1"
   resolved "https://registry.npm.taobao.org/got/download/got-6.7.1.tgz?cache=0&sync_timestamp=1582184421462&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fgot%2Fdownload%2Fgot-6.7.1.tgz#240cd05785a9a18e561dc1b44b41c763ef1e8db0"
@@ -5714,6 +5750,13 @@ graphql-let@0.x:
   optionalDependencies:
     "@graphql-codegen/typescript-resolvers" "^1.12.2"
 
+graphql-query-complexity@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.npm.taobao.org/graphql-query-complexity/download/graphql-query-complexity-0.3.0.tgz#71a44e124b7591a185d9d8cde55205aa57680c5d"
+  integrity sha1-caROEkt1kaGF2djN5VIFqldoDF0=
+  dependencies:
+    lodash.get "^4.4.2"
+
 graphql-request@^1.5.0:
   version "1.8.2"
   resolved "https://registry.npm.taobao.org/graphql-request/download/graphql-request-1.8.2.tgz#398d10ae15c585676741bde3fc01d5ca948f8fbe"
@@ -5721,7 +5764,7 @@ graphql-request@^1.5.0:
   dependencies:
     cross-fetch "2.2.2"
 
-graphql-subscriptions@^1.0.0:
+graphql-subscriptions@^1.0.0, graphql-subscriptions@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/graphql-subscriptions/download/graphql-subscriptions-1.1.0.tgz#5f2fa4233eda44cf7570526adfcf3c16937aef11"
   integrity sha1-Xy+kIz7aRM91cFJq3888FpN67xE=
@@ -5780,7 +5823,7 @@ graphql-upload@^8.0.2:
     http-errors "^1.7.3"
     object-path "^0.11.4"
 
-"graphql@14.0.2 - 14.2.0 || ^14.3.1", graphql@^14.5.3, graphql@^14.5.8:
+graphql@*, "graphql@14.0.2 - 14.2.0 || ^14.3.1", graphql@^14.5.3, graphql@^14.5.8:
   version "14.6.0"
   resolved "https://registry.npm.taobao.org/graphql/download/graphql-14.6.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fgraphql%2Fdownload%2Fgraphql-14.6.0.tgz#57822297111e874ea12f5cd4419616930cd83e49"
   integrity sha1-V4IilxEeh06hL1zUQZYWkwzYPkk=
@@ -7094,7 +7137,7 @@ lodash.debounce@^4.0.8:
   resolved "https://registry.npm.taobao.org/lodash.debounce/download/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
   integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
 
-lodash.get@^4:
+lodash.get@^4, lodash.get@^4.4.2:
   version "4.4.2"
   resolved "https://registry.npm.taobao.org/lodash.get/download/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
   integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
@@ -9125,7 +9168,7 @@ recast@0.18.5:
 
 reflect-metadata@^0.1.13:
   version "0.1.13"
-  resolved "https://registry.npm.taobao.org/reflect-metadata/download/reflect-metadata-0.1.13.tgz?cache=0&sync_timestamp=1583312410264&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freflect-metadata%2Fdownload%2Freflect-metadata-0.1.13.tgz#67ae3ca57c972a2aa1642b10fe363fe32d49dc08"
+  resolved "https://registry.npm.taobao.org/reflect-metadata/download/reflect-metadata-0.1.13.tgz#67ae3ca57c972a2aa1642b10fe363fe32d49dc08"
   integrity sha1-Z648pXyXKiqhZCsQ/jY/4y1J3Ag=
 
 reflect.ownkeys@^0.2.0:
@@ -9600,7 +9643,7 @@ semver@7.0.0:
   resolved "https://registry.npm.taobao.org/semver/download/semver-7.0.0.tgz?cache=0&sync_timestamp=1581458265183&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsemver%2Fdownload%2Fsemver-7.0.0.tgz#5f3ca35761e47e05b206c6daff2cf814f0316b8e"
   integrity sha1-XzyjV2HkfgWyBsba/yz4FPAxa44=
 
-semver@^6.0.0, semver@^6.1.2, semver@^6.3.0:
+semver@^6.0.0, semver@^6.1.2, semver@^6.2.0, semver@^6.3.0:
   version "6.3.0"
   resolved "https://registry.npm.taobao.org/semver/download/semver-6.3.0.tgz?cache=0&sync_timestamp=1581458265183&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsemver%2Fdownload%2Fsemver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha1-7gpkyK9ejO6mdoexM3YeG+y9HT0=
@@ -10464,6 +10507,21 @@ type-fest@^0.8.1:
   resolved "https://registry.npm.taobao.org/type-fest/download/type-fest-0.8.1.tgz?cache=0&sync_timestamp=1582188531679&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftype-fest%2Fdownload%2Ftype-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
   integrity sha1-CeJJ696FHTseSNJ8EFREZn8XuD0=
 
+type-graphql@^0.17.6:
+  version "0.17.6"
+  resolved "https://registry.npm.taobao.org/type-graphql/download/type-graphql-0.17.6.tgz#2a939df607f7ca2924986fd0c0b8c753835d7d01"
+  integrity sha1-KpOd9gf3yikkmG/QwLjHU4NdfQE=
+  dependencies:
+    "@types/glob" "^7.1.1"
+    "@types/node" "^12.6.2"
+    "@types/semver" "^6.0.1"
+    class-validator ">=0.9.1"
+    glob "^7.1.4"
+    graphql-query-complexity "^0.3.0"
+    graphql-subscriptions "^1.1.0"
+    semver "^6.2.0"
+    tslib "^1.10.0"
+
 type-is@^1.6.16:
   version "1.6.18"
   resolved "https://registry.npm.taobao.org/type-is/download/type-is-1.6.18.tgz#4e552cd05df09467dcbc4ef739de89f2cf37c131"
@@ -10731,6 +10789,11 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
+
+validator@12.0.0:
+  version "12.0.0"
+  resolved "https://registry.npm.taobao.org/validator/download/validator-12.0.0.tgz#fb33221f5320abe2422cda2f517dc3838064e813"
+  integrity sha1-+zMiH1Mgq+JCLNovUX3Dg4Bk6BM=
 
 vary@^1.1.2, vary@~1.1.2:
   version "1.1.2"

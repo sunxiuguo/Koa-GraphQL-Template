@@ -1,4 +1,4 @@
-import { InfoModal } from '../mongodb/scheme/info';
+import { InfoModal } from '../entities/info';
 import { Context } from 'koa';
 
 export const saveInfo = async (ctx: Context) => {

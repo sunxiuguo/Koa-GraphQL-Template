@@ -5,7 +5,8 @@
       "jsx": "preserve",
       "lib": [
         "dom",
-        "es2017"
+        "es2017",
+        "esnext.asynciterable"
       ],
       "module": "commonjs",
       "moduleResolution": "node",

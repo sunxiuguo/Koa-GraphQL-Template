@@ -1,4 +1,5 @@
 import { prop, arrayProp, getModelForClass, pre } from '@typegoose/typegoose';
+import { Field, ObjectType } from 'type-graphql';
 import { Meta } from './meta';
 
 @pre<Info>('save', function() {
@@ -10,16 +11,24 @@ import { Meta } from './meta';
         this.meta.updatedAt = Date.now();
     }
 })
+@ObjectType()
 export class Info {
+    @Field({ description: 'id' })
+    public _id?: string;
+
+    @Field(() => [String], { description: '爱好' })
     @arrayProp({ items: String })
     public hobby!: string[];
 
+    @Field({ description: '身高' })
     @prop()
     public height!: string;
 
+    @Field({ description: '体重' })
     @prop()
     public weight!: number;
 
+    @Field(() => Meta, { description: '时间' })
     @prop({ _id: false })
     public meta!: Meta; // 不生成_id
 }

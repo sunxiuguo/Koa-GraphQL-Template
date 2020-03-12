@@ -1,4 +1,4 @@
-import { StudentModel } from '../mongodb/scheme/student';
+import { StudentModel } from '../entities/student';
 import { Context } from 'koa';
 
 export const saveStudent = async (ctx: Context) => {

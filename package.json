@@ -19,6 +19,7 @@
         "@apollo/react-ssr": "3.1.3",
         "@material-ui/core": "^4.9.4",
         "@typegoose/typegoose": "^6.4.0",
+        "@types/graphql": "^14.5.0",
         "apollo-cache-inmemory": "1.6.5",
         "apollo-client": "2.6.8",
         "apollo-link-http": "1.5.16",
@@ -37,7 +38,9 @@
         "mongoose": "^5.9.3",
         "next": "latest",
         "react": "^16.12.0",
-        "react-dom": "^16.12.0"
+        "react-dom": "^16.12.0",
+        "reflect-metadata": "^0.1.13",
+        "type-graphql": "^0.17.6"
     },
     "devDependencies": {
         "@graphql-codegen/typescript": "^1.9.1",

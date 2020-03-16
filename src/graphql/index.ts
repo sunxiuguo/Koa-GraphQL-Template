@@ -7,7 +7,7 @@ function getResolvers() {
     return [path.resolve(__dirname + '/resolvers/*.ts')];
 }
 
-function getSchema() {
+async function getSchema() {
     return buildSchema({
         resolvers: getResolvers()
     });
@@ -22,11 +22,8 @@ export async function integrateGraphql(app: Koa<Koa.DefaultState, Koa.DefaultCon
             }
         } as any,
         introspection: true,
-        context: ({ ctx }) => {
-            console.log(ctx);
-        }
+        context: ({ ctx }) => ctx
     });
-
     server.applyMiddleware({ app });
     return server;
 }

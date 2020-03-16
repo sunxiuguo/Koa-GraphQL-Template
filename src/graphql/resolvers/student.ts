@@ -23,6 +23,13 @@ export class StudentResolver {
         return await StudentModel.find({});
     }
 
+    @Query(() => [Student], { nullable: true, description: '查询学生列表(带Info)' })
+    async studentsWithInfo() {
+        return await StudentModel.find({})
+            .populate('info', 'hobby height weight')
+            .exec();
+    }
+
     @Mutation(() => Student)
     async saveStudent(@Arg('data') newStudent: StudentInput) {
         const student = new StudentModel(newStudent);

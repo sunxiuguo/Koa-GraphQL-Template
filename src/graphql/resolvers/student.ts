@@ -1,4 +1,4 @@
-import { Resolver, Query, Mutation, Arg, InputType, Field } from 'type-graphql';
+import { Resolver, Query, Mutation, Arg, InputType, Field, Args, ArgsType } from 'type-graphql';
 import { StudentModel, Student } from '../../entities/student';
 
 @InputType()
@@ -16,11 +16,27 @@ class StudentInput {
     public info!: string;
 }
 
+@ArgsType()
+class StudentArgs {
+    @Field({ description: '姓名', nullable: true })
+    public name?: string;
+
+    @Field({ description: '性别', nullable: true })
+    public sex?: string; // 考虑用enum
+
+    @Field({ description: '年龄', nullable: true })
+    public age?: number;
+
+    @Field({ description: 'infoid', nullable: true })
+    public info?: string;
+}
+
 @Resolver(Student)
 export class StudentResolver {
     @Query(() => [Student], { nullable: true, description: '查询学生列表' })
-    async students() {
-        return await StudentModel.find({});
+    async students(@Args() args: StudentArgs) {
+        // TODO args have to be required?
+        return await StudentModel.find(args);
     }
 
     @Query(() => [Student], { nullable: true, description: '查询学生列表(带Info)' })

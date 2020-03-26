@@ -1,3 +1,7 @@
+<div align="center">
+    <img src="https://github.com/sunxiuguo/Awesome-Koa-Graphql/blob/master/preview.jpeg" width="100%" alt="preview"/>
+</div>
+
 # TypeScript and Koa Graphql Server Template
 
 This is a koa graphql template build with typescript

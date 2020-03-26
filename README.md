@@ -1,16 +1,16 @@
 <div align="center">
-    <img src="https://github.com/sunxiuguo/Awesome-Koa-Graphql/blob/master/preview.jpeg" width="100%" alt="preview"/>
+    <img src="https://github.com/sunxiuguo/Koa-GraphQL-Template/blob/master/preview.jpeg" width="100%" alt="preview"/>
 </div>
 
-# TypeScript and Koa Graphql Server Template
+# TypeScript and Koa GraphQL Server Template
 
-This is a koa graphql template build with typescript
+This is a koa GraphQL template build with typescript
 
 ## Include
 
 -   Koa2
 -   apollo-server-koa v2
--   graphQL(use type-graphql)
+-   GraphQL(use type-graphql)
 -   mongodb (use mongoose + typegoose as orm)
 -   eslint
 -   nodemon
@@ -36,7 +36,7 @@ This is a koa graphql template build with typescript
 
     `yarn serve`
 
-5. **visit graphql**
+5. **visit GraphQL**
 
     `http://localhost:4000/graphql`
 

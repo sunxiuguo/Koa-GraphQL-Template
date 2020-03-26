@@ -39,3 +39,48 @@ This is a koa graphql template build with typescript
 5. **visit graphql**
 
     `http://localhost:4000/graphql`
+
+    5.1 try to create a mutation
+
+    ```
+    mutation {
+        saveInfo(data: { hobby:["唱","跳","rap","篮球"], height:"165", weight: 100}){
+            hobby
+            height
+            weight
+        }
+    }
+    ```
+
+    then you will see
+
+    ![](https://user-gold-cdn.xitu.io/2020/3/26/171157c890f8e5e9?w=2860&h=846&f=png&s=40442)
+
+    5.2 try to query
+
+    ```
+    query {
+        #   students(age:22){
+        #     sex
+        #     name
+        #     age
+        #   }
+
+        #   studentsWithInfo {
+        #     sex
+        #     name
+        #     age
+        #   }
+
+        infos {
+            _id
+            height
+            weight
+            hobby
+        }
+    }
+    ```
+
+    then you will see
+
+    ![](https://user-gold-cdn.xitu.io/2020/3/26/171157666f5e2c69?w=2872&h=1478&f=png&s=86976)

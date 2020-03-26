@@ -14,23 +14,24 @@ This is a koa graphql template build with typescript
 
 ## Getting Started
 
-1. install all dependencies
+1. **install all dependencies**
 
-`yarn`
+    `yarn`
 
-2. install mongodb
+2. **install mongodb**
 
-`brew tap mongodb/brew`
-`brew install mongodb-community@4.2`
+    `brew tap mongodb/brew`
 
-3. start mongo service
+    `brew install mongodb-community@4.2`
 
-`brew services start mongodb-community@4.2`
+3. **start mongo service**
 
-4. start server
+    `brew services start mongodb-community@4.2`
 
-`yarn serve`
+4. **start server**
 
-5. visit graphql
+    `yarn serve`
 
-`http://localhost:4000/graphql`
+5. **visit graphql**
+
+    `http://localhost:4000/graphql`

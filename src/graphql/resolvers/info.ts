@@ -17,7 +17,7 @@ class InfoInput {
 export class InfoResolver {
     @Query(() => [Info], { nullable: true, description: '查询信息列表' })
     async infos() {
-        return await InfoModal.find({}).sort([['meta.createAt', -1]]);
+        return await InfoModal.find({}).sort('-meta.createdAt');
     }
 
     @Mutation(() => Info)

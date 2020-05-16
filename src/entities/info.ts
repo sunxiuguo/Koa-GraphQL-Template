@@ -28,7 +28,7 @@ export class Info {
     @prop()
     public weight!: number;
 
-    @Field(() => Meta, { description: '时间' })
+    @Field(() => Meta, { description: '时间', nullable: true })
     @prop({ _id: false })
     public meta!: Meta; // 不生成_id
 }

@@ -17,12 +17,18 @@ class InfoInput {
 export class InfoResolver {
     @Query(() => [Info], { nullable: true, description: '查询信息列表' })
     async infos() {
-        return await InfoModal.find({});
+        return await InfoModal.find({}).sort([['meta.createAt', -1]]);
     }
 
     @Mutation(() => Info)
     async saveInfo(@Arg('data') newInfo: InfoInput) {
         const info = new InfoModal(newInfo);
         return await info.save();
+    }
+
+    @Mutation(() => Number, { nullable: true })
+    async removeAllInfo() {
+        const res = await InfoModal.deleteMany({ weight: { $gte: 0 } });
+        return res.deletedCount || 0;
     }
 }

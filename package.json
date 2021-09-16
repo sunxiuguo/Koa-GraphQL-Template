@@ -23,6 +23,18 @@
         "reflect-metadata": "^0.1.13",
         "type-graphql": "^0.17.6"
     },
+    "keywords": [
+        "graphql",
+        "koa",
+        "mongoose",
+        "mongodb",
+        "typescript",
+        "apollo",
+        "nodejs",
+        "koa-graphql-template",
+        "typegoose",
+        "type-graphql"
+    ],
     "devDependencies": {
         "@types/koa": "^2.11.2",
         "@types/koa-bodyparser": "^4.3.0",
